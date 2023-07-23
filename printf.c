@@ -20,6 +20,8 @@ int _printf(const char *format, ...)
 		{"o", print_base8},
 		{"x", print_base16_lower},
 		{"X", print_base16_upper},
+		{"r", print_reversed},
+		{"R", rot13},
 		{NULL, NULL}
 	};
 	va_list args;
