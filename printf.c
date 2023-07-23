@@ -15,6 +15,11 @@ int _printf(const char *format, ...)
 		{"%", print_percent},
 		{"i", print_integer},
 		{"d", print_integer},
+		{"b", print_base2},
+		{"u", print_unsigned_int},
+		{"o", print_base8},
+		{"x", print_base16_lower},
+		{"X", print_base16_upper},
 		{NULL, NULL}
 	};
 	va_list args;

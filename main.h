@@ -31,4 +31,18 @@ int print_character(va_list args);
 int print_string(va_list args);
 int print_percent(__attribute__((unused))va_list args);
 int print_integer(va_list args);
+int print_reversed(va_list args);
+int rot13(va_list args);
+char *rev_strings(char *t);
+void put_base(char *str);
+unsigned int base_lens(unsigned int num, int base);
+char *_memcpy(char *dest, char *sc, unsigned int nr);
+int print_base2(va_list args);
+int print_base8(va_list args);
+int print_base16_lower(va_list args);
+int print_base16_upper(va_list args);
+int check_hex_case(int num, char x);
+int print_unsignd(unsigned int n);
+int print_unsigned_int(va_list args);
+
 #endif /*MAIN_H*/
