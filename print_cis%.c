@@ -43,7 +43,7 @@ int print_string(va_list args)
 		_putchar(str_ptr[count]);
 		count++;
 	}
-	return (count);
+	return (count - 1);
 }
 
 
