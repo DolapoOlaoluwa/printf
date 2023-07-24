@@ -94,7 +94,7 @@ char *rev_strings(char *t)
 }
 
 /**
- * put_base - sends character on standard outputput
+ * put_base - sends character on standard output
  * @str: string to parse
  */
 void put_base(char *str)

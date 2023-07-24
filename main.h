@@ -44,5 +44,6 @@ int print_base16_upper(va_list args);
 int check_hex_case(int num, char x);
 int print_unsignd(unsigned int n);
 int print_unsigned_int(va_list args);
+int print_pointer(va_list args);
 
 #endif /*MAIN_H*/
