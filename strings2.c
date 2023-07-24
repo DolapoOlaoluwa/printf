@@ -65,3 +65,61 @@ int print_pointer(va_list args)
 	}
 	return (count);
 }
+
+
+/**
+ * hex_print - To print character in uppercase hex of ascii value
+ * @c: character to be printed
+ * Return: number of printed characters(always 2)
+ */
+static int hex_print(char c)
+{
+	int count;
+	char diff = 'A' - ':';
+	char d[2];
+
+	d[0] = c / 16;
+	d[1] = c % 16;
+
+	for (count = 0; count < 2; count++)
+	{
+		if (d[count] >= 10)
+			_putchar('0' + diff + d[count]);
+		else
+			_putchar('0' + d[count]);
+	}
+	return (count);
+}
+
+
+/**
+ * str_nonprintable - To print string and nonprintable followed by
+ * the ASCII code value in hexadecimal
+ * @args: Is the arguments
+ * Return: number of printed characters
+ */
+int str_nonprintable(va_list args)
+{
+	unsigned int h;
+	int count = 0;
+	char *str = va_arg(args, char *);
+
+	if (str == NULL)
+		str = "(null)";
+	for (h = 0; str[h]; h++)
+	{
+		if (str[h] < 32 || str[h] >= 127)
+		{
+			_putchar('\\');
+			_putchar('x');
+			count += 2;
+			count += hex_print(str[h]);
+		}
+		else
+		{
+			_putchar(str[h]);
+			count++;
+		}
+	}
+	return (count);
+}

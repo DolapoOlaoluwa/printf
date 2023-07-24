@@ -23,6 +23,7 @@ int _printf(const char *format, ...)
 		{"r", print_reversed},
 		{"R", rot13},
 		{"p", print_pointer},
+		{"S", str_nonprintable},
 		{NULL, NULL}
 	};
 	va_list args;
