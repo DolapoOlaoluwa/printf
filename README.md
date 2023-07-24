@@ -129,6 +129,15 @@ You don’t have to handle field width
 You don’t have to handle precision
 You don’t have to handle the length modifiers
 
+Task 6:
+
+Handle the following conversion specifier: p.
+
+You don’t have to handle the flag characters
+You don’t have to handle field width
+You don’t have to handle precision
+You don’t have to handle the length modifiers
+
 Task 13:
 Handle the following custom conversion specifier:
 
