@@ -22,7 +22,7 @@ int _printf(const char *format, ...)
 		{"X", print_base16_upper},
 		{"r", print_reversed},
 		{"R", rot13},
-		{"p", print_pointer},
+		{"p", print_address},
 		{"S", str_nonprintable},
 		{NULL, NULL}
 	};

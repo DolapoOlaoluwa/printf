@@ -20,11 +20,11 @@ char *_memcpy(char *dest, char *sc, unsigned int nr)
 
 
 /**
- * print_pointer - To print address
+ * print_address - To print address
  * @args: Is the argument
  * Return: no of characters to be printed
  */
-int print_pointer(va_list args)
+int print_address(va_list args)
 {
 	int count = 0;
 	unsigned int a[16], v, sum;
