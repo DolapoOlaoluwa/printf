@@ -24,9 +24,6 @@ int _printf(const char *format, ...)
 		{"R", rot13},
 		{"p", print_address},
 		{"S", str_nonprintable},
-		{"+", print_flag},
-		{" ", print_flag},
-		{"#", print_flag},
 		{NULL, NULL}
 	};
 	va_list args;
