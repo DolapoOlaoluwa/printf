@@ -123,3 +123,27 @@ int str_nonprintable(va_list args)
 	}
 	return (count);
 }
+
+
+/**
+ * print_flag - To print string and nonprintable followed by
+ * the ASCII code value in hexadecimal
+ * @args: Is the arguments
+ * Return: number of printed characters
+ */
+int print_flag(va_list args)
+{
+	unsigned int g;
+	char *str = va_arg(args, char *);
+
+	if (str == NULL)
+		str = "(null)";
+	for (g = 0; str[g]; g++)
+	{
+		if (str[g] == 32 || str[g] == 35 || str[g] == 43)
+		{
+			_putchar(str[g]);
+		}
+	}
+	return (0);
+}
