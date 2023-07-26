@@ -36,7 +36,8 @@ int print_string(va_list args)
 
 	str_ptr = va_arg(args, char *);
 	if (str_ptr == NULL)
-		return (0);
+		str_ptr = "(nill)";
+
 	count = 0;
 	while (str_ptr[count] != '\0')
 	{
