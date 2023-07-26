@@ -42,7 +42,7 @@ int print_base2(va_list args)
 
 
 /**
- * print_base8 - To prints the numeric representation of a number in base 8.
+ * print_base8 - To print the numeric representation of a number in base 8.
  * @args: To list of all the arguments passed to the program.
  * Return: Number of symbols printed.
  */
@@ -80,7 +80,7 @@ int print_base8(va_list args)
 }
 
 /**
- * print_base16_lower - Prints a representation of a decimal
+ * print_base16_lower - To print a representation of a decimal
  *	number on base16 lowercase.
  * @args: List of the arguments passed to the function.
  * Return: Number of characters printed

@@ -64,7 +64,6 @@ int rot13(va_list args)
 
 /**
  * rev_strings - reverses a string
- *
  * @t: string to reverse
  * Return: a pointer to a character
  */
@@ -105,7 +104,7 @@ void put_base(char *str)
 		_putchar(str[n]);
 }
 /**
- * base_lens - calculates the octal number length
+ * base_lens - To calculate the octal number length
  * @num: number of length being calculated
  * @base: base to be calculated
  * Return: integer length of a number

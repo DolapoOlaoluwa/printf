@@ -2,7 +2,7 @@
 #include <math.h>
 
 /**
- * _memcpy - copies memory area
+ * _memcpy - To copies memory area
  * @dest: destination for copying
  * @sc: source to copy from
  * @nr: number of bytes to copy

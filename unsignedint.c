@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_unsignd - Prints unsigned integer.
+ * print_unsignd - To print unsigned integer.
  * @n: unsigned integer
  * Return: len of numbers printed.
  */
@@ -27,9 +27,9 @@ int print_unsignd(unsigned int n)
 }
 
 /**
- * print_unsigned_int - Prints unsigned integer.
+ * print_unsigned_int - To print unsigned integer.
  * @args: list of unknown argument.
- * Return: len of numberrs printed.
+ * Return: len of printed numbers.
  */
 int print_unsigned_int(va_list args)
 {
